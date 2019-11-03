@@ -7,9 +7,9 @@ export class Welcome extends Component {
             <section className="intro text-center" id="title-section">
                 <div className="title-text col-sm-10 col-sm-12 col-lg-12">
                     
-                    <div className="bb mx-auto d-block">
+                    <div className="me mx-auto d-block">
                     </div>
-                    <div style={{margin: "12%"}}></div>
+                    <div style={{margin: "15%"}}></div>
                     <i className="font-italic">Hello there, </i> <br></br>
                     <i className="font-italic text-break">You have reached one, </i>
                     <h1 className="title">Hesbon Kiptoo Maiyo, &nbsp;

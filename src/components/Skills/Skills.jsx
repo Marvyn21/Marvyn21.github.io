@@ -15,10 +15,10 @@ export class Skills extends Component {
                             <div class="col-lg-3 col-md-6 ">
                                 <div class="icon mb-3 mt-5"><i class="fab fa-python fa-5x"></i></div>
                                 <h4 class="text-uppercase">Python</h4>
-                                <p class="text-muted">I am proficient in python web frameworks, data analysis and general algorithms.</p>
+                                <p class="font-weight-normal">I am proficient in python web frameworks, data extraction and engineering, and general algorithms.</p>
                                 Django
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "95%" }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "85%" }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                                 Flask
@@ -26,69 +26,75 @@ export class Skills extends Component {
                                     <div class="progress-bar bg-warning" role="progressbar" style={{ width: "95%" }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
-                                Data Science
-                                    <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "90%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                </div>
-                                Data Scraping/mining
-                                    <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "90%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                </div>
                             </div>
                             <div class="col-lg-3 col-md-6 ">
                                 <div class="icon mb-3 mt-5"><i class="fab fa-js fa-5x"></i></div>
                                 <h4 class="text-uppercase">Javascript</h4>
-                                <p class="text-muted">Am a PEAN full stack js developer. I have experience in both front and backend development.</p>
-                                Node-Express
-                                    <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "95%" }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                </div>
+                                <p class="font-weight-normal">I am skilled in frontend design using Vanilla Js, React and redux</p>
+
                                 React
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "95%" }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "75%" }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
-                                Angular
+                                Redux
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "90%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "70%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
-                                Jquery and Vanilla Js
+                                Vanilla Js
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "96%" }} aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "78%" }} aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 ">
-                                <div class="icon mb-3 mt-5"><i class="fab fa-java fa-5x"></i></div>
-                                <h4 class="text-uppercase">Java</h4>
-                                <p class="text-muted">Am well informed in OOP, and I can comfortably create a stand-alone app using java swing.</p>
-                                Java
+                                <div class="icon mb-3 mt-5"><i class="fas fa-cogs fa-5x "></i></div>
+                                <h4 class="text-uppercase">Data Science</h4>
+                                <p class="font-weight-normal">I am skilled in using python to extract, process, visualize, and build predictive models from data</p>
+                                Pandas
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "90%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "87%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                </div>
+                                Numpy
+                                    <div class="progress skill-bars">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "82%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                </div>
+                                Matplotlib
+                                    <div class="progress skill-bars">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "82%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                </div>
+                                Sk-Learn
+                                    <div class="progress skill-bars">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "80%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 ">
                                 <div class="icon mb-3 mt-5"><i class="fas fa-database fa-5x"></i></div>
                                 <h4 class="text-uppercase">Database</h4>
-                                <p class="text-muted">I have worked with both relational and non-relational database management systems.</p>
+                                <p class="font-weight-normal">I have worked with both relational and object database management systems.</p>
                                 PostgreSQL
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "97%" }} aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "92%" }} aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
-                                MySQL & SQLite
+                                MySQL
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "95%" }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "85%" }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                </div>
+                                SQLite
+                                    <div class="progress skill-bars">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "82%" }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                                 MongoDB
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "90%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "80%" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                             </div>
@@ -97,56 +103,71 @@ export class Skills extends Component {
                             <div class="col-lg-3 col-md-6">
                                 <div class="icon mb-3 mt-5"><i class="fab fa-aws fa-5x"></i></div>
                                 <h4 class="text-uppercase">DevOps</h4>
-                                <p class="text-muted">I have some substantial knowledge in server management, web hosting and maintenance.</p>
+                                <p class="font-weight-normal">I have some substantial knowledge in continous integration, server management, web hosting and automation.</p>
                                 AWS
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "70%" }} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "45%" }} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                                 GCP
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "70%" }} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "45%" }} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                </div>
+                                Circle CI
+                                    <div class="progress skill-bars">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "45%" }} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                </div>
+                                Heroku
+                                    <div class="progress skill-bars">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "50%" }} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                </div>
+                                Code Climate
+                                    <div class="progress skill-bars">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "50%" }} aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 ">
-                                <div class="icon mb-3 mt-5"><i class="fab fa-bootstrap fa-5x"></i></div>
+                                <div class="icon mb-3 mt-5"><i class="fas fa-code fa-5x"></i></div>
                                 <h4 class="text-uppercase lined lined-compact">UI &amp; UX</h4>
-                                <p class="text-muted">I have a lot of experience in developing user-friendly UIs, and using common templating engines.</p>
+                                <p class="font-weight-normal">I have a experience in developing user-friendly UIs, and using common templating engines.</p>
                                 HTML
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "98%" }} aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "89%" }} aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                                 CSS & SASS
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "97%" }} aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "85%" }} aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                                 Templating engines
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "98%" }} aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "80%" }} aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                                 CSS frameworks(Bootstrap, Material & Semantic UI)
                                     <div class="progress skill-bars">
-                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "98%" }} aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "80%" }} aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 ">
                                 <div class="icon mb-3 mt-5"><i class="fas fa-users-cog fa-5x"></i></div>
                                 <h4 class="text-uppercase lined lined-compact">Collaboration</h4>
-                                <p class="text-muted">Using collaboration tools such as github, am able to work
-                                 in a team amicably and develop a product under the agile methodology.</p>
+                                <p class="font-weight-normal">Using collaboration tools such as github, am able to work
+                                 in a team amicably and develop a product using the agile methodology.</p>
 
-                                Team work
+                                Team Collaboration
                                     <div class="progress skill-bars">
                                     <div class="progress-bar bg-warning" role="progressbar" style={{ width: "97%" }} aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
 
-                                CI/CD(Continous Integration/ Deployment)
+                                Team Integration
                                     <div class="progress skill-bars">
                                     <div class="progress-bar bg-warning" role="progressbar" style={{ width: "98%" }} aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
                                         </div>
@@ -157,11 +178,16 @@ export class Skills extends Component {
                                     <div class="progress-bar bg-warning" role="progressbar" style={{ width: "96%" }} aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                 </div>
+                                Initiative
+                                    <div class="progress skill-bars">
+                                    <div class="progress-bar bg-warning" role="progressbar" style={{ width: "96%" }} aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                </div>
                             </div>
                             <div class="col-lg-3 col-md-6 ">
                                 <div class="icon mb-3 mt-5"><i class="fas fa-cube fa-5x"></i></div>
                                 <h4 class="text-uppercase lined lined-compact">Testing, Linting & Debugging</h4>
-                                <p class="text-muted">I write clean, linted and well tested code. I ensure
+                                <p class="font-weight-normal">I write clean, linted and well tested code. I ensure
                                  I have a good maintenability rate, and a high test coverage.</p>
                                  Test Coverage
                                     <div class="progress skill-bars">

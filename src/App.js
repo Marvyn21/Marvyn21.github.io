@@ -5,6 +5,11 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Pastwork from "./components/Pastwork/Pastwork";
 import Contact from "./components/Contact/Contact";
+import ReactGA from "react-ga";
+
+const trackingId = "UA-151364162-1";
+ReactGA.initialize(trackingId, { gaOptions: { siteSpeedSampleRate: 100 } });
+
 class App extends React.Component {
   componentDidMount() {
     var TxtType = function(el, toRotate, period) {
