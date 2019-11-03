@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Be+Vietnam|Pacifico&display=swap");
 body {
-  background: rgb(243, 243, 243);
+  background: rgb(44, 42, 42);
 }
 * {
   margin: 0;
@@ -9,6 +9,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 .card-header {
   background: #fff !important;
   border-bottom: solid 1px rgb(245, 245, 245);
@@ -21,7 +22,7 @@ html {
 .title-hr {
   width: 80px;
   border-radius: 10px;
-  background: rgb(255, 204, 109);
+  background: rgb(202, 201, 199);
   margin: auto;
   height: 20px;
 }

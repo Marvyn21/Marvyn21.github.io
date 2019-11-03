@@ -6,3 +6,6 @@
 .skill-bars .progress-bar{
     background: rgba(73, 73, 73, 0.6) !important;
 }
+section{
+    color: rgb(255, 255, 255);
+}
