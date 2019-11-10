@@ -3,6 +3,60 @@ import "./Pastwork.css";
 import ReactGA from "react-ga";
 
 export class Pastwork extends Component {
+  state = {
+    projects: [
+      {
+        name:"Route Money API",
+        description:"Route Money API - This is the backbone of the Route money application. Route is a an online payments platform.",
+        link:"https://route.money/",
+        image:"https://res.cloudinary.com/dsw3onksq/image/upload/v1595670060/route_a0zyev.png",
+        technologies:["Python, Django REST Framework", "Postgres", "CI/CD on CircleCI", "Kubernetes, Docker & Helm", "Digital Ocean", "Google Kubernetes Engine", "PT, Slack and Github team collaboration"],
+        icons:["fab fa-python mr-3", "fa fa-snowflake-o mr-3", "fas fa-database mr-3"],
+        repo:"https://github.com/Route-mony/route-money-api",
+        privateRepo:true
+      },
+      {
+        name:"Activo API",
+        description:"The Activo-API is the backbone of an application for managing physical assets of the organization. The project enables centralized management of assets of the organization.",
+        link:"https://activo.andela.com/",
+        image:"https://res.cloudinary.com/dsw3onksq/image/upload/v1572770470/Activo_q9rfgc.png",
+        technologies:["Python", "Flask RESTPlus", "Postgres", "Redis", "Celery", "Slack Bot"],
+        icons:["fab fa-python mr-3", "fa fa-free-code-camp mr-3", "fas fa-database mr-3"],
+        repo:"https://github.com/andela/activo-api",
+        privateRepo:true
+      },
+      {
+        name:"Authors Haven",
+        description:"A platform whereby authors and article writers are able to express themselves freely and reach out to their target audience.",
+        link:"https://ah-shakas-frontend-staging.herokuapp.com/",
+        image:"https://res.cloudinary.com/dsw3onksq/image/upload/v1572771669/authors_f81tgd.png",
+        technologies:["Python, Django REST Framework", "Postgres", "CI/CD on travis & heroku", "React, Redux", "Cloudinary, Semantic UI, Google places", "PT, Slack and Github team collaboration"],
+        icons:["fab fa-python mr-3", "fab fa-react mr-3", "fas fa-database mr-3"],
+        repo:"https://github.com/andela/ah-fulldeck-fronten",
+        privateRepo:false
+      },
+      {
+        name:"Post Retirement Medical Fund",
+        description:"This is a product that enables retirees access good quality healthcare during retirement. There is strain in payment of medical bills and also many cases of premature death upon retirees not to mention the need for excellent healthcare upon retirement.",
+        link:"https://prmf.actserv.co.ke/",
+        image:"https://res.cloudinary.com/dsw3onksq/image/upload/v1595672433/Screenshot_2020-07-25_at_13.20.05_nnhfse.png",
+        technologies:["Python, Django", "Postgres", "CI/CD on GitLab", "Redis, Celery"],
+        icons:["fab fa-python mr-3", "fa fa-html5 mr-3", "fas fa-database mr-3"],
+        repo:"https://fili.actserv.co.ke/m.bironga/post_retirement_fund",
+        privateRepo:true
+      },
+      {
+        name:"Vitea iHealth API",
+        description:"Personal health software that presents various benefits in assisting health enterprises automate processes, increase productivity, and facilitate workflow management as well as help patients track their health history at a personal level.",
+        link:"https://github.com/IgniteBinary/web-ihealth-api",
+        image:"https://res.cloudinary.com/dsw3onksq/image/upload/v1595672029/vitea_bnrw6q.png",
+        technologies:["Python", "FlaskRestPlus", "Postgres", "CI/CD on GitHub", "Redis"],
+        icons:["fab fa-python mr-3", "fa fa-flask mr-3", "fa fa-heartbeat mr-3"],
+        repo:"https://github.com/IgniteBinary/web-ihealth-api",
+        privateRepo:true
+      },
+    ]
+  }
   render() {
     return (
       <div>
@@ -53,11 +107,13 @@ export class Pastwork extends Component {
               class="tab-pane fade py-5 show active"
             >
               <div class="row">
+                {this.state.projects.map(project=>(
+
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
                   <div class="bg-light rounded shadow-sm">
-                    <a href="https://res.cloudinary.com/dsw3onksq/image/upload/v1572770470/Activo_q9rfgc.png">
+                    <a href={project.link}>
                       <img
-                        src="https://res.cloudinary.com/dsw3onksq/image/upload/v1572770470/Activo_q9rfgc.png"
+                        src={project.image}
                         alt="Activo"
                         class="img-fluid card-img-top"
                       />
@@ -71,30 +127,28 @@ export class Pastwork extends Component {
                           rel="noopener noreferrer"
                           class="text-dark"
                         >
-                          Activo API
+                          {project.name}
                         </a>
                       </h5>
                       <p class="small text-dark">
                         {" "}
-                        The activo-api is the backbone of an application for
-                        managing physical assets of the organisation. The
-                        project enables centralised management of assets of the
-                        organisation.
+                        {project.description}
                       </p>
                       <p class="small text-muted mb-0">Key technologies</p>
                       <ul class="small text-muted ml-3">
-                        <li>Python</li>
-                        <li>Flask RESTplus</li>
-                        <li>Postgres, Redis, Celery</li>
-                        <li>Slack Bot</li>
+                        {project.technologies.map(technology => (
+
+                        <li>{technology}</li>
+                        ))}
                       </ul>
                       <div class="d-flex align-items-center justify-content-between rounded-pill bg-dark px-3 py-2 mt-4">
                         <p class="small mb-0">
-                          <i class="fab fa-python mr-2"></i>
-                          <i class="fas fa-database mr-2"></i>{" "}
+                        {project.icons.map(icon=>(
+                        <i class={icon}></i>
+                        ))}
                           <span class="font-weight-bold">
                             <a
-                              href="https://github.com/andela/activo-api"
+                              href={project.repo}
                               className="text-light"
                               onClick={() =>
                                 ReactGA.event({
@@ -103,12 +157,12 @@ export class Pastwork extends Component {
                                 })
                               }
                             >
-                              Private Repo
+                              {project.privateRepo? "Private Repo": "Public Repo"}
                             </a>
                           </span>
                         </p>
                         <a
-                          href="https://activo.andela.com/"
+                          href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
                           class="badge badge-info px-3 rounded-pill font-weight-normal"
@@ -125,149 +179,9 @@ export class Pastwork extends Component {
                     </div>
                   </div>
                 </div>
+                ))}
 
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                  <div class="bg-white rounded shadow-sm">
-                    <a href="https://res.cloudinary.com/dsw3onksq/image/upload/v1572771669/authors_f81tgd.png">
-                      <img
-                        src="https://res.cloudinary.com/dsw3onksq/image/upload/v1572771669/authors_f81tgd.png"
-                        alt=""
-                        class="img-fluid card-img-top"
-                      />
-                    </a>
-                    <div class="p-4">
-                      <h5>
-                        {" "}
-                        <a
-                          href="https://ah-shakas-frontend-staging.herokuapp.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="text-dark"
-                        >
-                          Authors Haven
-                        </a>
-                      </h5>
-                      <p class="small text-dark">
-                        {" "}
-                        A platform whereby authors and article writers are able
-                        to express themselves freely and reach out to their
-                        target audience.
-                      </p>
-                      <p class="small text-muted mb-0">Key technologies</p>
-                      <ul class="small text-muted ml-3">
-                        <li>React, Redux</li>
-                        <li>Cloudinary, Semantic UI, Google places</li>
-                        <li>Postgres, Django, DRF</li>
-                        <li>PT, slack and github team collaboration</li>
-                        <li>CI/CD on travis & heroku</li>
-                      </ul>
-                      <div class="d-flex align-items-center justify-content-between rounded-pill bg-dark px-3 py-2 mt-4">
-                        <p class="small mb-0">
-                          <i class="fab fa-python mr-2"></i>
-                          <i class="fab fa-react mr-2"></i>{" "}
-                          <span class="font-weight-bold">
-                            <a
-                              href="https://github.com/andela/ah-fulldeck-frontend"
-                              className="text-light"
-                              onClick={() =>
-                                ReactGA.event({
-                                  category: "Visit Repo",
-                                  action: "Full deck Repo"
-                                })
-                              }
-                            >
-                              Github Repo
-                            </a>
-                          </span>
-                        </p>
-                        <a
-                          href="https://ah-shakas-frontend-staging.herokuapp.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="badge badge-info px-3 rounded-pill font-weight-normal"
-                          onClick={() =>
-                            ReactGA.event({
-                              category: "Visit Repo",
-                              action: "Full deck site"
-                            })
-                          }
-                        >
-                          Visit Site
-                        </a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-                  <div class="bg-white rounded shadow-sm">
-                    <a href="https://res.cloudinary.com/dsw3onksq/image/upload/v1572773935/best-seller_nyapns.png">
-                      <img
-                        src="https://res.cloudinary.com/dsw3onksq/image/upload/v1572773935/best-seller_nyapns.png"
-                        alt=""
-                        class="img-fluid card-img-top"
-                      />
-                    </a>
-                    <div class="p-4">
-                      <h5>
-                        {" "}
-                        <a
-                          href="https://best-seller-hesbon.herokuapp.com/docs"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="text-dark"
-                        >
-                          Best seller
-                        </a>
-                      </h5>
-                      <p class="small text-dark">
-                        {" "}
-                        An e-commerce application built using React that enables
-                        users shop for goods in the plaform.
-                      </p>
-                      <p class="small text-muted mb-0">Key technologies</p>
-                      <ul class="small text-muted ml-3">
-                        <li>React, Redux</li>
-                        <li>MYSQL, Django, DRF</li>
-                        <li>Stripe</li>
-                      </ul>
-                      <div class="d-flex align-items-center justify-content-between rounded-pill bg-dark px-3 py-2 mt-4">
-                        <p class="small mb-0">
-                          <i class="fab fa-python mr-2"></i>
-                          <i class="fas fa-database mr-2"></i>
-                          <span class="font-weight-bold">
-                            <a
-                              href="https://github.com/Hesbon5600/best-seller"
-                              className="text-light"
-                              onClick={() =>
-                                ReactGA.event({
-                                  category: "Visit Repo",
-                                  action: "Best seller Repo"
-                                })
-                              }
-                            >
-                              Github Repo
-                            </a>
-                          </span>
-                        </p>
-                        <a
-                          href="https://best-seller-hesbon.herokuapp.com/docs"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="badge badge-info px-3 rounded-pill font-weight-normal"
-                          onClick={() =>
-                            ReactGA.event({
-                              category: "Visit Repo",
-                              action: "Best seller site"
-                            })
-                          }
-                        >
-                          Visit Site
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div
