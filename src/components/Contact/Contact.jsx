@@ -14,10 +14,10 @@ export class Contact extends Component {
             <div className="container-fluid">
               <div className="row">
                 <div className="text-light col-md-4 text-left mt-5">
-                  <i class="fas fa-phone fa-sm"></i>&nbsp;Mobile No:
-                  ++254-727-737-299<br></br>
+                  <i class="fas fa-phone fa-sm"></i>&nbsp;Mobile No: <a href="tel:+254-727-737-299">+254-727-737-299</a>
+                  <br></br>
                   <i class="far fa-envelope fa-sm"></i>&nbsp;Email:
-                  hesbonkiptoo5600@gmail.com
+                  <a href="mailto:hesbonkiptoo5600@gmail.com">hesbonkiptoo5600@gmail.com</a>
                 </div>
                 <div className="col-md-4 text-md-center mt-5">
                   <a
@@ -80,7 +80,7 @@ export class Contact extends Component {
         <br></br>
         <br></br>
         <div className="text-center text-light">
-          &copy; 2019. Hesbon Kiptoo Maiyo
+          &copy; {(new Date().getFullYear())}. Hesbon Kiptoo Maiyo
         </div>
         <br></br>
       </section>

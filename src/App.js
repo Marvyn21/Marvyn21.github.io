@@ -3,7 +3,7 @@ import "./App.css";
 import Welcome from "./components/Welcome/Welcome";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
-import Pastwork from "./components/Pastwork/Pastwork";
+import PastWork from "./components/Pastwork/PastWork";
 import Contact from "./components/Contact/Contact";
 import ReactGA from "react-ga";
 
@@ -12,7 +12,7 @@ ReactGA.initialize(trackingId, { gaOptions: { siteSpeedSampleRate: 100 } });
 
 class App extends React.Component {
   componentDidMount() {
-    var TxtType = function(el, toRotate, period) {
+    var TxtType = function (el, toRotate, period) {
       this.toRotate = toRotate;
       this.el = el;
       this.loopNum = 0;
@@ -22,7 +22,7 @@ class App extends React.Component {
       this.isDeleting = false;
     };
 
-    TxtType.prototype.tick = function() {
+    TxtType.prototype.tick = function () {
       var i = this.loopNum % this.toRotate.length;
       var fullTxt = this.toRotate[i];
 
@@ -50,12 +50,12 @@ class App extends React.Component {
         delta = 500;
       }
 
-      setTimeout(function() {
+      setTimeout(function () {
         that.tick();
       }, delta);
     };
 
-    window.onload = function() {
+    window.onload = function () {
       var elements = document.getElementsByClassName("typewrite");
       for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute("data-type");
@@ -81,7 +81,7 @@ class App extends React.Component {
         <br></br>
         <br></br>
         <br></br>
-        <Pastwork />
+        <PastWork />
         <br></br>
         <br></br>
         <br></br>

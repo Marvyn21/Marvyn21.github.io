@@ -1,6 +1,146 @@
 import React from "react";
 
 class Cv extends React.Component {
+  state ={
+    bio: "I am a passionate software developer with 3 years experience in the field. My main stack is Python (Flask/Django) but I also have experience with React-Redux. I am proficient in PostgreSQL, SQL, HTML, CSS. I have experience working with a team using an agile methodology to develop the applications",
+    attributes: ["Good communication skills", "Effective team player and leader", "Prompt action on feedback & attention to detail"],
+    skills: ["Patterns (MVC), REST APIs", "Testing & linting", "UI/UX design with Adobe XD", "Team leadership"],
+    ProfessionalSkills: [
+      {
+        name: "Python",
+        level: {width: "87%"}
+      },
+      {
+        name: "Flask",
+        level: { width: "90%" }
+      },
+      {
+        name: "Django",
+        level: {width: "87%"}
+      },
+      {
+        name: "Docker",
+        level: {width: "83%"}
+      },
+      {
+        name: "Kubernetes",
+        level: {width: "80%"}
+      },
+      {
+        name: "PostgreSQL",
+        level: {width: "85%"}
+      },
+      {
+        name: "MySQL",
+        level: {width: "80%"}
+      },
+      {
+        name: "MySQL",
+        level: {width: "80%"}
+      },
+      {
+        name: "GCP",
+        level: {width: "78%"}
+      },
+      {
+        name: "AWS",
+        level: {width: "75%"}
+      },
+      {
+        name: "Digital Ocean",
+        level: {width: "84%"}
+      },
+      {
+        name: "Git",
+        level: {width: "90%"}
+      },
+      {
+        name: "Heroku",
+        level: {width: "84%"}
+      },
+    ],
+    employmentHistory: [
+      {
+        company: "Actuarial Services (E.A) Ltd",
+        title: "Software Engineer",
+        location: "Nairobi",
+        from: "February, 2020",
+        to: "Present",
+        projects: [
+          {
+            from: "February, 2020",
+            to: "April, 2020",
+            descriptions: [
+              "I was part of a team that worked on a product called Post Retirement Medical Fund.  This is a product that helps to foresee the medical expenses after retirement. The stacks used is Python Django.",
+
+              "This product increased the productivity and efficiency of the insurance department by about 20%. The customization nature of the product also earned the company revenue after selling it to other companies such as the Retirement Benefits Authority, and Search Results Kenya Bureau of Standards.",
+
+              "I successfully prioritized product requirements and set realistic expectations in regards to development and timeline.",
+
+              "I oversaw all aspects of design and development, and offered design solutions when necessary."
+            ],
+            technologies: ["Python, Django", "PostgreSQL"]
+          },
+        ]
+      },
+      {
+        company: "Route Money",
+        title: "Software Engineer",
+        location: "Nairobi",
+        from: "December, 2019",
+        to: "April, 2020",
+        projects: [
+          {
+            from: "December, 2019",
+            to: "April, 2020",
+            descriptions: [
+              "At Route, I was part of a backend team that designed the Route API. Route is a product that aims at reducing the hustle of transferring funds across different platforms. Such transactions include bank to bank transactions, bank to mobile transactions, among others.",
+
+              "I worked to support the company mission and adhered to company protocol at all times.",
+
+              "I Managed back-end development for the Route API which is implemented in Django REST Framework and the deployment is done on Google Kubernetes Engine. I configured the CI/CD pipeline using CircleCI and github. I also monitored the health of the cluster to ensure that It's always at the optimal state."
+            ],
+            technologies: ["Python, DRF", "Kubernetes", "Docker", "PostgreSQL", "Google Kubernetes Engine", "Promethius", "Grafana"]
+          },
+        ]
+      },
+      {
+        company: "Andela",
+        title: "Software Engineer",
+        location: "Nairobi",
+        from: "December, 2018",
+        to: "October, 2019",
+        projects: [
+          {
+            from: "December, 2018",
+            to: "March, 2019",
+            descriptions: [
+              "I was part of a team that worked on a product called Authors Haven.  This is a social platform that allowed authors to create articles as well as reading them. The stacks used are; Python Django for the back-end and React-Redux for the front-end."
+            ],
+            technologies: ["Python, Django(DRF)", "React-Redux", "Heroku", "PostgreSQL"]
+          },
+          {
+            from: "March, 2019",
+            to: "October, 2019",
+            descriptions: [
+              "At Andela, I was a member of the back-end team of a product called Activo. This product aims at managing Andela assets. As a result, not only did the efficiency of the operations team improved by 8% but also their workload was reduced by 30% The stack used to create the Activo-API is Python Flask RESTplus.",
+
+              "I worked as an active member of the team for 3 months, after which I advanced and rejoined the team as a Technical coordinator.",
+              "Developed a Slack bot to help with the booking of seats in the Andela Lagos Campus. This increased the utilization by 15% and reduced the operations team task by 10%.",
+
+              "I am proud to say that I facilitated the advancement of 6 junior engineers to an intermediate level.",
+
+              "As a technical coordinator at Activo, I was also in charge of merging all PRs to staging. During this time, the overall output by the team improved by 6%.",
+
+              "I also participated in making a major release to production. The bulk asset upload release allowed the ops team members to mass upload assets. This eased their work by  around 20%."
+            ],
+            technologies: ["Python, Flask(FlaskRESTPlus)", "PostgreSQL", "Slack API"]
+          },
+        ]
+      },
+
+    ]
+  }
   render() {
     return (
       <div className="p-4 text-dark">
@@ -70,11 +210,7 @@ class Cv extends React.Component {
             <b>Profile</b>
           </h6>
           <p className="p-2 text-dark">
-            I am a passionate software developer with over 2 years experience in
-            the field. My main stack is Python (Flask/Django) but I also have
-            experience with React-Redux. I am proficient in PostgreSQL, SQL,
-            HTML, CSS. I have experience working with a team using an agile
-            methodology to develop the applications
+            {this.state.bio}
           </p>
         </div>
         <hr></hr>
@@ -88,132 +224,33 @@ class Cv extends React.Component {
               Personal Attributes
               <hr className="normal-hr-2"></hr>
               <ul className="pl-4">
-                <li>Good communication skills</li>
-                <li>Effective team player and leader</li>
-                <li>Prompt action on feedback & attention to detail</li>
+                {this.state.attributes.map(attribute =>(<li>{attribute}</li>))}
               </ul>
               Other Skills
               <hr className="normal-hr-2"></hr>
               <ul className="pl-4">
-                <li>Patterns (MVC), REST APIs.</li>
-                <li>Testing & linting</li>
-                <li>UI/UX design with Adobe XD</li>
-                <li>Team leadership</li>
+              {this.state.skills.map(skill =>(<li>{skill}</li>))}
               </ul>
             </div>
             <div className="col-6 p-1">
               Professional skills
               <hr className="normal-hr-2"></hr>
-              Python
+              {this.state.ProfessionalSkills.map(skill =>(
+              <div>
+              {skill.name}
               <div class="progress" style={{ height: "6px" }}>
                 <div
                   class="progress-bar bg-dark"
                   role="progressbar"
-                  style={{ width: "87%" }}
+                  style={skill.level}
                   aria-valuenow="95"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
               </div>
-              Flask
-              <div class="progress" style={{ height: "6px" }}>
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  style={{ width: "90%" }}
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
               </div>
-              Django
-              <div class="progress" style={{ height: "6px" }}>
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  style={{ width: "85%" }}
-                  aria-valuenow="99"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              Pandas
-              <div class="progress" style={{ height: "6px" }}>
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  style={{ width: "80%" }}
-                  aria-valuenow="93"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              PostgreSQL
-              <div class="progress" style={{ height: "6px" }}>
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  style={{ width: "83%" }}
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              SQL
-              <div class="progress" style={{ height: "6px" }}>
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  style={{ width: "80%" }}
-                  aria-valuenow="99"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              Travis
-              <div class="progress" style={{ height: "6px" }}>
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  style={{ width: "69%" }}
-                  aria-valuenow="100"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              Heroku
-              <div class="progress" style={{ height: "6px" }}>
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  style={{ width: "70%" }}
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="70"
-                ></div>
-              </div>
-              Github
-              <div class="progress" style={{ height: "6px" }}>
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  style={{ width: "90%" }}
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              Git
-              <div class="progress" style={{ height: "6px" }}>
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  style={{ width: "90%" }}
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
+              ))}
+
             </div>
           </div>
 
@@ -222,77 +259,35 @@ class Cv extends React.Component {
             <h6>
               <b>Employment History</b>
             </h6>
-            Software Engineer at Andela, Nairobi<br></br>
-            <label className="text-dark">December, 2018 - October, 2019</label>
+            {this.state.employmentHistory.map(employment => (
+              <div>
+            <hr className="bold-hr-3"></hr>
+
+            <strong>{employment.title} at {employment.company}, {employment.location}</strong><br></br>
+            <h6 className="text-uppercase text-secondary small">{employment.from} - {employment.to}</h6>
+
             <br></br>
+            {employment.projects.map(project =>(
+            <div>
             <i className="p-2" style={{ fontSize: "11px" }}>
-              Dec 2018 - Mar 2019
+              {project.from} - {project.to}
             </i>
-            <p className="pl-2 text-dark">
-              I was part of a team that worked on a product called{" "}
-              <a
-                href="https://ah-shakas-frontend-staging.herokuapp.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                Authors Haven
-              </a>
-              . This is a social platform that allows writers/article authors to
-              express themselves and be sure to reach out to their target
-              audience. The stacks used are; Python Django(DRF) for the back-end
-              and React-Redux for the front-end.
+            {project.descriptions.map(description=>(
+              <div>
+              <p className="pl-2 text-dark">
+                {description}
             </p>
-            <hr className="normal-hr-2"></hr>
-            <i className="p-2" style={{ fontSize: "11px" }}>
-              May, 2019 - Sep, 2019
-            </i>
-            <p className="pl-2 text-dark">
-              At Andela, I was a member of the back-end team of a product called
-              <a
-                href="https://activo.andela.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                {" "}
-                Activo.
-              </a>
-              This product aims at managing Andela assets.
-              <br></br>
-              Stacks: Python (Flask RESTplus) <br></br>
-              Achievements:<br></br>
+              </div>
+            ))}
+              <p className="pl-1 h6 text-lg">Technologies used:</p>
               <ul className="pl-4">
-                <li>
-                  As a result, not only did the efficiency of the operations
-                  team improved by 8% but also their workload was reduced by 30%
-                </li>
-                <li>
-                  I worked as an active member of the team for 3 months, after
-                  which I advanced and rejoined the team as a Technical
-                  coordinator.
-                </li>
-                <li>
-                  Developed a Slack bot to help with the booking of seats in the
-                  Andela Lagos Campus. This increased the utilization by 15% and
-                  reduced the operations team task by 10%.
-                </li>
-                <li>
-                  I am proud to say that I facilitated the advancement of 6
-                  junior engineers to an intermediate level
-                </li>
-                <li>
-                  As a technical coordinator at Activo, I was also in charge of
-                  merging all PRs to staging. During this time, the overall
-                  output by the team improved by 6%.
-                </li>
-                <li>
-                  I also participated in making a major release to production.
-                  The bulk asset upload release allowed the ops team members to
-                  mass upload assets. This eased their work by around 20%.
-                </li>
-              </ul>
-            </p>
+              {project.technologies.map(technology =>(<li>{technology}</li>))}
+            </ul>
+            <hr className="normal-hr-2"></hr>
+            </div>
+              ))}
+              </div>
+            ))}
           </div>
         </div>
 
