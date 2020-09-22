@@ -77,11 +77,11 @@ class App extends React.Component {
         <Welcome />
         <br></br>
         <br></br>
-        <Skills />
-        <br></br>
-        <br></br>
-        <br></br>
         <PastWork />
+        <br></br>
+        <br></br>
+        <br></br>
+        <Skills />
         <br></br>
         <br></br>
         <br></br>

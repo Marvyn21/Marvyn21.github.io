@@ -145,7 +145,7 @@ export class PastWork extends Component {
                 aria-selected="true"
                 class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 active"
               >
-                Web Apps
+                Recent Work
               </a>
             </li>
             <li class="nav-item flex-sm-fill">

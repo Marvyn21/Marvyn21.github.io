@@ -2,9 +2,9 @@ import React from "react";
 
 class Cv extends React.Component {
   state ={
-    bio: "I am a passionate software developer with 3 years experience in the field. My main stack is Python (Flask/Django) but I also have experience with React-Redux. I am proficient in PostgreSQL, SQL, HTML, CSS. I have experience working with a team using an agile methodology to develop the applications",
+    bio: "Innovative Programmer and Internet Entrepreneur striving to make the world a more unified and connected place. A creative thinker, adept in software development, and working with modern technologies",
     attributes: ["Good communication skills", "Effective team player and leader", "Prompt action on feedback & attention to detail"],
-    skills: ["Patterns (MVC), REST APIs", "Testing & linting", "UI/UX design with Adobe XD", "Team leadership"],
+    skills: ["Patterns (MVC), REST APIs", "Testing & linting", "CI/CD", "Team leadership"],
     ProfessionalSkills: [
       {
         name: "Python",
@@ -61,11 +61,35 @@ class Cv extends React.Component {
     ],
     employmentHistory: [
       {
+        company: "Ignite Binary",
+        title: "Software Engineer",
+        location: "Nairobi",
+        from: "June, 2020",
+        to: "Present",
+        projects: [
+          {
+            from: "June, 2020",
+            to: "Present",
+            descriptions: [
+              "At Ignite, I am a member of the back-end team of a product called Vitea. This is a personal health software that presents various benefits in assisting health enterprises to automate processes, increase productivity, and facilitate workflow management, as well as help patients, track their health history at a personal level.",
+
+              "The software contains real-time, patient medical records that make information available instantly and securely to authorized users. It also contains the medical and treatment histories of patients, the software will go beyond standard clinical data collected in a provider’s office and can be inclusive of a broader view of a patient’s care with great benefits to the medical institutions and patients. ",
+
+              "Contain a patient’s medical history, diagnoses, medications, treatment plans, immunization dates, allergies, radiology images, and laboratory and test results. Allows access to evidence-based tools that providers can use to make decisions about a patient’s care. Automate and streamline medical providers' workflow. Allows access to a pool of approved and registered doctors (serve as doctors database) Allows on-demand consulting",
+
+              "I successfully prioritize product requirements and set realistic expectations in regards to development and timeline.",
+
+            ],
+            technologies: ["Python, Flask", "Redis", "PostgreSQL"]
+          },
+        ]
+      },
+      {
         company: "Actuarial Services (E.A) Ltd",
         title: "Software Engineer",
         location: "Nairobi",
         from: "February, 2020",
-        to: "Present",
+        to: "July",
         projects: [
           {
             from: "February, 2020",
@@ -79,7 +103,7 @@ class Cv extends React.Component {
 
               "I oversaw all aspects of design and development, and offered design solutions when necessary."
             ],
-            technologies: ["Python, Django", "PostgreSQL"]
+            technologies: ["Python, Django", "Redis", "PostgreSQL"]
           },
         ]
       },
