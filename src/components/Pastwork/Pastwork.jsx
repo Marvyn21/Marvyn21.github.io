@@ -42,7 +42,6 @@ export class PastWork extends Component {
           "Postgres",
           "Redis",
           "Celery",
-          "Slack Bot",
         ],
         icons: [
           "fab fa-python mr-3",
@@ -52,34 +51,12 @@ export class PastWork extends Component {
         repo: "https://github.com/andela/activo-api",
         privateRepo: true,
       },
-      {
-        name: "Authors Haven",
-        description:
-          "A platform whereby authors and article writers are able to express themselves freely and reach out to their target audience.",
-        link: "https://ah-shakas-frontend-staging.herokuapp.com/",
-        image:
-          "https://res.cloudinary.com/dsw3onksq/image/upload/v1572771669/authors_f81tgd.png",
-        technologies: [
-          "Python, Django REST Framework",
-          "Postgres",
-          "CI/CD on travis & heroku",
-          "React, Redux",
-          "Cloudinary, Semantic UI, Google places",
-          "PT, Slack and Github team collaboration",
-        ],
-        icons: [
-          "fab fa-python mr-3",
-          "fab fa-react mr-3",
-          "fas fa-database mr-3",
-        ],
-        repo: "https://github.com/andela/ah-fulldeck-fronten",
-        privateRepo: false,
-      },
+
       {
         name: "Post Retirement Medical Fund",
         description:
           "This is a product that enables retirees access good quality healthcare during retirement. There is strain in payment of medical bills and also many cases of premature death upon retirees not to mention the need for excellent healthcare upon retirement.",
-        link: "https://prmf.actserv.co.ke/",
+        link: "https://kaa-prmf.actserv.co.ke/",
         image:
           "https://res.cloudinary.com/dsw3onksq/image/upload/v1595672433/Screenshot_2020-07-25_at_13.20.05_nnhfse.png",
         technologies: [
@@ -118,6 +95,29 @@ export class PastWork extends Component {
         repo: "https://github.com/IgniteBinary/web-ihealth-api",
         privateRepo: true,
       },
+      {
+        name: "Authors Haven",
+        description:
+          "A platform whereby authors and article writers are able to express themselves freely and reach out to their target audience.",
+        link: "https://ah-shakas-frontend-staging.herokuapp.com/",
+        image:
+          "https://res.cloudinary.com/dsw3onksq/image/upload/v1572771669/authors_f81tgd.png",
+        technologies: [
+          "Python, Django REST Framework",
+          "Postgres",
+          "CI/CD on travis & heroku",
+          "React, Redux",
+          "Cloudinary, Semantic UI, Google places",
+          "PT, Slack and Github team collaboration",
+        ],
+        icons: [
+          "fab fa-python mr-3",
+          "fab fa-react mr-3",
+          "fas fa-database mr-3",
+        ],
+        repo: "https://github.com/andela/ah-fulldeck-fronten",
+        privateRepo: false,
+      }
     ],
   };
   render() {

@@ -3,7 +3,7 @@ import "./App.css";
 import Welcome from "./components/Welcome/Welcome";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
-import PastWork from "./components/Pastwork/PastWork";
+import PastWork from "./components/Pastwork/Pastwork";
 import Contact from "./components/Contact/Contact";
 import ReactGA from "react-ga";
 

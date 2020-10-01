@@ -35,10 +35,6 @@ class Cv extends React.Component {
         level: {width: "80%"}
       },
       {
-        name: "MySQL",
-        level: {width: "80%"}
-      },
-      {
         name: "GCP",
         level: {width: "78%"}
       },
@@ -367,8 +363,3 @@ class Cv extends React.Component {
   }
 }
 export default Cv;
-
-//sdbbksdhb
-
-// Video
-//jasvjhgv
