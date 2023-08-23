@@ -57,108 +57,41 @@ class Cv extends React.Component {
     ],
     employmentHistory: [
       {
-        company: "Ignite Binary",
-        title: "Software Engineer",
-        location: "Nairobi",
-        from: "June, 2020",
-        to: "Present",
+        company: "TechnoServe Group",
+        title: "Software Developer",
+        location: "Remote",
+        from: "August, 2021",
+        to: "March, 2023",
         projects: [
           {
-            from: "June, 2020",
-            to: "Present",
+            from: "August, 2021",
+            to: "March, 2023",
             descriptions: [
-              "At Ignite, I am a member of the back-end team of a product called Vitea. This is a personal health software that presents various benefits in assisting health enterprises to automate processes, increase productivity, and facilitate workflow management, as well as help patients, track their health history at a personal level.",
-
-              "The software contains real-time, patient medical records that make information available instantly and securely to authorized users. It also contains the medical and treatment histories of patients, the software will go beyond standard clinical data collected in a provider’s office and can be inclusive of a broader view of a patient’s care with great benefits to the medical institutions and patients. ",
-
-              "Contain a patient’s medical history, diagnoses, medications, treatment plans, immunization dates, allergies, radiology images, and laboratory and test results. Allows access to evidence-based tools that providers can use to make decisions about a patient’s care. Automate and streamline medical providers' workflow. Allows access to a pool of approved and registered doctors (serve as doctors database) Allows on-demand consulting",
-
-              "I successfully prioritize product requirements and set realistic expectations in regards to development and timeline.",
-
+              "As part of a team, I created a web application for the company that reduced the time it took to complete a specific development task from 3 days to 2 days, resulting in a 30% reduction in development time. Utilizing API integration and Redux state management, I improved user satisfaction scores by 20%.",
+              "Working closely with a team of developers and designers, I developed modular front-end user-interfaces and back-end services using JavaScript, Node.js, and React. Additionally, I optimized database schemas with normalized data to improve system performance. To upgrade application performance by 30%, I implemented multithreading and optimized SQL queries, resulting in faster execution through parallel processing techniques.",
             ],
-            technologies: ["Python, Flask", "Redis", "PostgreSQL"]
+            technologies: ["JavaScript (ReactJS)", "Flask", "Django", "Redux", "API Integration"],
           },
         ]
       },
       {
-        company: "Actuarial Services (E.A) Ltd",
-        title: "Software Engineer",
-        location: "Nairobi",
-        from: "February, 2020",
-        to: "July",
+        company: "Digital Dive Web Solutions",
+        title: "Frontend Developer",
+        location: "Nairobi, Kenya",
+        from: "01/2020",
+        to: "06/2021",
         projects: [
           {
-            from: "February, 2020",
-            to: "April, 2020",
+            from: "01/2020",
+            to: "06/2021",
             descriptions: [
-              "I was part of a team that worked on a product called Post Retirement Medical Fund.  This is a product that helps to foresee the medical expenses after retirement. The stacks used is Python Django.",
-
-              "This product increased the productivity and efficiency of the insurance department by about 20%. The customization nature of the product also earned the company revenue after selling it to other companies such as the Retirement Benefits Authority, and Search Results Kenya Bureau of Standards.",
-
-              "I successfully prioritized product requirements and set realistic expectations in regards to development and timeline.",
-
-              "I oversaw all aspects of design and development, and offered design solutions when necessary."
+              "Developed highly interactive single page applications utilizing modern web technologies such as HTML/CSS, and JavaScript (ReactJS), and adhering to web accessibility and design standards.",
+              "Improved site stability and increased user engagement by increasing unit test coverage by 30% through implementing automated testing processes. Wrote unit tests and performed code reviews, troubleshooted and debugged issues as they arose, and optimized application performance to improve user experience. These efforts resulted in increased stability and performance of the organization's digital products, leading to greater user engagement and satisfaction.",
             ],
-            technologies: ["Python, Django", "Redis", "PostgreSQL"]
+            technologies: ["HTML/CSS", "JavaScript (ReactJS)", "Unit Testing", "Web Accessibility"],
           },
-        ]
+        ],
       },
-      {
-        company: "Route Money",
-        title: "Software Engineer",
-        location: "Nairobi",
-        from: "December, 2019",
-        to: "April, 2020",
-        projects: [
-          {
-            from: "December, 2019",
-            to: "April, 2020",
-            descriptions: [
-              "At Route, I was part of a backend team that designed the Route API. Route is a product that aims at reducing the hustle of transferring funds across different platforms. Such transactions include bank to bank transactions, bank to mobile transactions, among others.",
-
-              "I worked to support the company mission and adhered to company protocol at all times.",
-
-              "I Managed back-end development for the Route API which is implemented in Django REST Framework and the deployment is done on Google Kubernetes Engine. I configured the CI/CD pipeline using CircleCI and github. I also monitored the health of the cluster to ensure that It's always at the optimal state."
-            ],
-            technologies: ["Python, DRF", "Kubernetes", "Docker", "PostgreSQL", "Google Kubernetes Engine", "Promethius", "Grafana"]
-          },
-        ]
-      },
-      {
-        company: "Andela",
-        title: "Software Engineer",
-        location: "Nairobi",
-        from: "December, 2018",
-        to: "October, 2019",
-        projects: [
-          {
-            from: "December, 2018",
-            to: "March, 2019",
-            descriptions: [
-              "I was part of a team that worked on a product called Authors Haven.  This is a social platform that allowed authors to create articles as well as reading them. The stacks used are; Python Django for the back-end and React-Redux for the front-end."
-            ],
-            technologies: ["Python, Django(DRF)", "React-Redux", "Heroku", "PostgreSQL"]
-          },
-          {
-            from: "March, 2019",
-            to: "October, 2019",
-            descriptions: [
-              "At Andela, I was a member of the back-end team of a product called Activo. This product aims at managing Andela assets. As a result, not only did the efficiency of the operations team improved by 8% but also their workload was reduced by 30% The stack used to create the Activo-API is Python Flask RESTplus.",
-
-              "I worked as an active member of the team for 3 months, after which I advanced and rejoined the team as a Technical coordinator.",
-              "Developed a Slack bot to help with the booking of seats in the Andela Lagos Campus. This increased the utilization by 15% and reduced the operations team task by 10%.",
-
-              "I am proud to say that I facilitated the advancement of 6 junior engineers to an intermediate level.",
-
-              "As a technical coordinator at Activo, I was also in charge of merging all PRs to staging. During this time, the overall output by the team improved by 6%.",
-
-              "I also participated in making a major release to production. The bulk asset upload release allowed the ops team members to mass upload assets. This eased their work by  around 20%."
-            ],
-            technologies: ["Python, Flask(FlaskRESTPlus)", "PostgreSQL", "Slack API"]
-          },
-        ]
-      },
-
     ]
   }
   render() {
@@ -174,12 +107,12 @@ class Cv extends React.Component {
         <br></br>
         <br></br>
         <div className="text-center">
-          Hesbon Kiptoo Maiyo,
+          Marvyn Kiplagat Rogony,
           <label className="text-dark">&nbsp;&nbsp;Software Engineer</label>
           <br></br>
-          Email: hesbonkiptoo5600@gmail.com
+          Email: marvynrogony@gmail.com
           <br></br>
-          Mobile No. +254-727-737-299
+          Mobile No. +254-719-127-027
           <br></br>
           Languages: English, Kiswahili
           <br></br>
@@ -187,7 +120,7 @@ class Cv extends React.Component {
           <br></br>
           <div className="col-md-6 text-center mt-2 mx-auto">
             <a
-              href="https://github.com/Hesbon5600"
+              href="https://github.com/Marvyn21"
               target="_blank"
               rel="noopener noreferrer"
               className="text-dark"
@@ -199,7 +132,7 @@ class Cv extends React.Component {
               />
             </a>
             <a
-              href="https://www.linkedin.com/in/hesbon-kiptoo-maiyo/"
+              href="https://www.linkedin.com/in/marvyn-rogony/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -210,7 +143,7 @@ class Cv extends React.Component {
               />
             </a>
             <a
-              href="https://stackoverflow.com/users/6531903/hesbon"
+              href="https://stackoverflow.com/users/21072496/marvyn-kiplagat" 
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -316,11 +249,11 @@ class Cv extends React.Component {
           <h6>
             <b>Education</b>
           </h6>
-          Bachelor of Science in Information Technology, Multimedia University
+          Bachelor of Science in Applied Computing, KCA University
           of Kenya, Nairobi
           <br></br>
           <i className="p-2" style={{ fontSize: "11px" }}>
-            September, 2015 - Present
+            May, 2019 - Dec 2022
           </i>
           <p className="pl-2 text-dark">
             This course has helped to build my understanding of a wide range of
@@ -329,14 +262,6 @@ class Cv extends React.Component {
         </div>
 
         <hr></hr>
-        <div className="text-left text-sm">
-          <h6>
-            <b>Hobbies</b>
-          </h6>
-          <p className="pl-2 text-dark">
-            Playing pool, Swimming, Watching movies
-          </p>
-        </div>
 
         <hr></hr>
         <div className="text-left text-sm">
@@ -345,14 +270,8 @@ class Cv extends React.Component {
           </h6>
           <div className="container row">
             <div className="col-6 text-dark">
-              Samuel Afolaranmi<br></br>
-              Software Engineer at Andela<br></br>
-              sammysgame.dev@gmail.com<br></br>
-              +234-806-466-731-7
-            </div>
-            <div className="col-6 text-dark">
               Kevin Nzioka<br></br>
-              Software Engineer at Andela<br></br>
+              Software Engineer at Microsoft<br></br>
               caveincicad@gmail.com<br></br>
               +254-706-228-321
             </div>
@@ -363,3 +282,170 @@ class Cv extends React.Component {
   }
 }
 export default Cv;
+
+// import React from "react";
+
+// class Cv extends React.Component {
+//   state = {
+//     bio: "Highly skilled software developer with a focus on frontend development, with experience in building web applications using ReactJS, Flask, and Django frameworks. Excellent problem-solving skills and a passion for delivering high-quality products. Strong collaboration skills, with the ability to work in a team and communicate effectively.",
+//     attributes: ["Good communication skills", "Effective team player and leader", "Prompt action on feedback & attention to detail"],
+//     skills: ["Patterns (MVC), REST APIs", "Testing & linting", "CI/CD", "Team leadership"],
+//     ProfessionalSkills: [
+//       {
+//         name: "JavaScript (ReactJS, NodeJS)",
+//         level: { width: "87%" },
+//       },
+//       {
+//         name: "Python (Django, Flask)",
+//         level: { width: "90%" },
+//       },
+//       // ... (other skills)
+//     ],
+//     employmentHistory: [
+//       {
+//         company: "TechnoServe Group",
+//         title: "Software Developer",
+//         location: "Remote",
+//         from: "08/2021",
+//         to: "03/2023",
+//         projects: [
+//           {
+//             from: "08/2021",
+//             to: "03/2023",
+//             descriptions: [
+//               "As part of a team, I created a web application for the company that reduced the time it took to complete a specific development task from 3 days to 2 days, resulting in a 30% reduction in development time. Utilizing API integration and Redux state management, I improved user satisfaction scores by 20%.",
+//               "Working closely with a team of developers and designers, I developed modular front-end user-interfaces and back-end services using JavaScript, Node.js, and React. Additionally, I optimized database schemas with normalized data to improve system performance. To upgrade application performance by 30%, I implemented multithreading and optimized SQL queries, resulting in faster execution through parallel processing techniques.",
+//             ],
+//             technologies: ["JavaScript (ReactJS)", "Flask", "Django", "Redux", "API Integration"],
+//           },
+//         ],
+//       },
+//       {
+//         company: "Digital Dive Web Solutions",
+//         title: "Frontend Developer",
+//         location: "Nairobi, Kenya",
+//         from: "01/2020",
+//         to: "06/2021",
+//         projects: [
+//           {
+//             from: "01/2020",
+//             to: "06/2021",
+//             descriptions: [
+//               "Developed highly interactive single page applications utilizing modern web technologies such as HTML/CSS, and JavaScript (ReactJS), and adhering to web accessibility and design standards.",
+//               "Improved site stability and increased user engagement by increasing unit test coverage by 30% through implementing automated testing processes. Wrote unit tests and performed code reviews, troubleshooted and debugged issues as they arose, and optimized application performance to improve user experience. These efforts resulted in increased stability and performance of the organization's digital products, leading to greater user engagement and satisfaction.",
+//             ],
+//             technologies: ["HTML/CSS", "JavaScript (ReactJS)", "Unit Testing", "Web Accessibility"],
+//           },
+//         ],
+//       },
+//       // ... (other employment history)
+//     ],
+//     // ... (rest of your state)
+//   };
+
+//   render() {
+//     return (
+//       <div className="p-4 text-dark">
+//         {/* ... (profile picture and contact information) */}
+//         <br />
+//         <br />
+
+//         <div className="text-left text-sm">
+//           <h6>
+//             <b>Profile</b>
+//           </h6>
+//           <p className="p-2 text-dark">{this.state.bio}</p>
+//         </div>
+//         <hr />
+
+//         <div className="text-left text-sm">
+//           <h6>
+//             <b>Skills</b>
+//           </h6>
+//           <div className="container-fluid row">
+//             {/* ... (personal attributes and other skills) */}
+//             <div className="col-6 p-1">
+//               Professional skills
+//               <hr className="normal-hr-2" />
+//               {this.state.ProfessionalSkills.map((skill) => (
+//                 <div>
+//                   {skill.name}
+//                   <div
+//                     className="progress"
+//                     style={{ height: "6px" }}
+//                   >
+//                     <div
+//                       className="progress-bar bg-dark"
+//                       role="progressbar"
+//                       style={skill.level}
+//                       aria-valuenow="95"
+//                       aria-valuemin="0"
+//                       aria-valuemax="100"
+//                     ></div>
+//                   </div>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+
+//           <div className="text-left text-sm page-break">
+//             <hr />
+//             <h6>
+//               <b>Employment History</b>
+//             </h6>
+//             {this.state.employmentHistory.map((employment) => (
+//               <div>
+//                 <hr className="bold-hr-3" />
+
+//                 <strong>
+//                   {employment.title} at {employment.company},{" "}
+//                   {employment.location}
+//                 </strong>
+//                 <br />
+//                 <h6 className="text-uppercase text-secondary small">
+//                   {employment.from} - {employment.to}
+//                 </h6>
+
+//                 <br />
+//                 {employment.projects.map((project) => (
+//                   <div>
+//                     <i
+//                       className="p-2"
+//                       style={{ fontSize: "11px" }}
+//                     >
+//                       {project.from} - {project.to}
+//                     </i>
+//                     {project.descriptions.map(
+//                       (description) => (
+//                         <div>
+//                           <p className="pl-2 text-dark">
+//                             {description}
+//                           </p>
+//                         </div>
+//                       )
+//                     )}
+//                     <p className="pl-1 h6 text-lg">
+//                       Technologies used:
+//                     </p>
+//                     <ul className="pl-4">
+//                       {project.technologies.map(
+//                         (technology) => (
+//                           <li>{technology}</li>
+//                         )
+//                       )}
+//                     </ul>
+//                     <hr className="normal-hr-2" />
+//                   </div>
+//                 ))}
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* ... (rest of your components) */}
+//       </div>
+//     );
+//   }
+// }
+
+// export default Cv;

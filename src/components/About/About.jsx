@@ -31,7 +31,7 @@ export class About extends Component {
                             margin="1.5cm"
                             forcePageBreak=".page-break"
                             scale={0.7}
-                            fileName="Hesbon_Kiptoo.pdf"
+                            fileName="Marvyn_Kiplagat_Rogony.pdf"
                             title=""
                             subject=""
                             keywords=""
