@@ -101,7 +101,7 @@ export class PastWork extends Component {
           "Elevate Your Events: Streamline event management with our Python-Flask and ReactJS platform. Effortlessly organize, promote, and sell tickets for various events, providing an exceptional experience for event organizers and attendees.",
         link: "https://eventgo.onrender.com/",
         image:
-          "https://res.cloudinary.com/dp5j2kwic/image/upload/v1692781340/a6b2u3h2ksj9i0imyppb.png",
+          "https://res.cloudinary.com/dp5j2kwic/image/upload/v1692781322/vfdnmtrzdvwpjdysajvc.png",
         technologies: [
           "Python, Flask",
           "FlaskRestPlus",
