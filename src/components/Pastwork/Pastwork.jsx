@@ -6,15 +6,15 @@ export class PastWork extends Component {
   state = {
     projects: [
       {
-        name: "Route Money API",
+        name: "Templates Random Restaurant",
         description:
-          "Route Money API - This is the backbone of the Route money application. Route is a an online payments platform.",
-        link: "https://route.money/",
+          "Restaurant Website Template This is a responsive restaurant website template built using HTML, Bootstrap, CSS, and JavaScript. This template is suitable for a restaurant, cafe, or any food-related business.",
+        link: "https://random-restaurant-by-marvyn.netlify.app/",
         image:
-          "https://res.cloudinary.com/dsw3onksq/image/upload/v1595670060/route_a0zyev.png",
+          "https://res.cloudinary.com/dp5j2kwic/image/upload/v1692781352/gphibjupgz4wwjkup4bh.png",
         technologies: [
-          "Python, Django REST Framework",
-          "Postgres",
+          "JavaScript, ",
+          "HTML/CSS",
           "CI/CD on CircleCI",
           "Kubernetes, Docker & Helm",
           "Digital Ocean",
@@ -26,19 +26,19 @@ export class PastWork extends Component {
           "fa fa-snowflake-o mr-3",
           "fas fa-database mr-3",
         ],
-        repo: "https://github.com/Route-mony/route-money-api",
+        repo: "https://github.com/Marvyn21/Restaurant-Template",
         privateRepo: true,
       },
       {
-        name: "Activo API",
+        name: "Manage TaskSync",
         description:
-          "The Activo-API is the backbone of an application for managing physical assets of the organization. The project enables centralized management of assets of the organization.",
-        link: "https://activo.andela.com/",
+          "TaskSync: a web app for software teams to manage tasks and team goals. Plan, assign, and track tasks collaboratively.",
+        link: "https://managewebpage.netlify.app/",
         image:
-          "https://res.cloudinary.com/dsw3onksq/image/upload/v1572770470/Activo_q9rfgc.png",
+          "https://res.cloudinary.com/dp5j2kwic/image/upload/v1692781364/tch0qviaswexrbfnii6v.png",
         technologies: [
-          "Python",
-          "Flask RESTPlus",
+          "JavaScript",
+          "HTML/CSS",
           "Postgres",
           "Redis",
           "Celery",
@@ -48,19 +48,19 @@ export class PastWork extends Component {
           "fa fa-free-code-camp mr-3",
           "fas fa-database mr-3",
         ],
-        repo: "https://github.com/andela/activo-api",
+        repo: "https://github.com/Marvyn21/Manage-WebPage",
         privateRepo: true,
       },
 
       {
-        name: "Post Retirement Medical Fund",
+        name: "Daily Scoop",
         description:
-          "This is a product that enables retirees access good quality healthcare during retirement. There is strain in payment of medical bills and also many cases of premature death upon retirees not to mention the need for excellent healthcare upon retirement.",
-        link: "https://kaa-prmf.actserv.co.ke/",
+          "This JS application fetches/display articles from News API using HTML/CSS/JS. Simple use of News API for web news. Expand with categories/UI tweaks. Site uses saurav.tech's API, incl. business, entertainment, health, science, sports, tech categories. Click navbar to view related articles.",
+        link: "https://marvyn21.github.io/Phase-1-Project-News-App/",
         image:
-          "https://res.cloudinary.com/dsw3onksq/image/upload/v1595672433/Screenshot_2020-07-25_at_13.20.05_nnhfse.png",
+          "https://res.cloudinary.com/dp5j2kwic/image/upload/v1692781383/ob9xge54fxqofmp4sxzs.png",
         technologies: [
-          "Python, Django",
+          "Javascript, vanilla JS",
           "Postgres",
           "CI/CD on GitLab",
           "Redis, Celery",
@@ -70,18 +70,40 @@ export class PastWork extends Component {
           "fa fa-html5 mr-3",
           "fas fa-database mr-3",
         ],
-        repo: "https://fili.actserv.co.ke/m.bironga/post_retirement_fund",
+        repo: "https://github.com/Marvyn21/Phase-1-Project-News-App",
         privateRepo: true,
       },
       {
-        name: "Vitea iHealth API",
+        name: "My-EStore",
         description:
-          "Personal health software that presents various benefits in assisting health enterprises automate processes, increase productivity, and facilitate workflow management as well as help patients track their health history at a personal level.",
-        link: "https://github.com/IgniteBinary/web-ihealth-api",
+          "Responsive e-commerce store built using HTML, CSS, JavaScript and Bootstrap",
+        link: "https://marvyn21.github.io/My-E-Store/",
         image:
-          "https://res.cloudinary.com/dsw3onksq/image/upload/v1595672029/vitea_bnrw6q.png",
+          "https://res.cloudinary.com/dp5j2kwic/image/upload/v1692781340/a6b2u3h2ksj9i0imyppb.png",
         technologies: [
-          "Python",
+          "JavaScript",
+          "HTML/CSS",
+          "Postgres",
+          "CI/CD on GitHub",
+          "Redis",
+        ],
+        icons: [
+          "fab fa-python mr-3",
+          "fa fa-flask mr-3",
+          "fa fa-heartbeat mr-3",
+        ],
+        repo: "https://github.com/Marvyn21/My-E-Store",
+        privateRepo: true,
+      },
+      {
+        name: "EventGo",
+        description:
+          "Elevate Your Events: Streamline event management with our Python-Flask and ReactJS platform. Effortlessly organize, promote, and sell tickets for various events, providing an exceptional experience for event organizers and attendees.",
+        link: "https://eventgo.onrender.com/",
+        image:
+          "https://res.cloudinary.com/dp5j2kwic/image/upload/v1692781340/a6b2u3h2ksj9i0imyppb.png",
+        technologies: [
+          "Python, Flask",
           "FlaskRestPlus",
           "Postgres",
           "CI/CD on GitHub",
@@ -92,7 +114,7 @@ export class PastWork extends Component {
           "fa fa-flask mr-3",
           "fa fa-heartbeat mr-3",
         ],
-        repo: "https://github.com/IgniteBinary/web-ihealth-api",
+        repo: "https://github.com/Sarah-Wambui/Event-Ticketing-App",
         privateRepo: true,
       },
       {
@@ -253,7 +275,7 @@ export class PastWork extends Component {
                 Check out more projects on my github account:
                 <br></br>
                 <a
-                  href="https://github.com/Hesbon5600"
+                  href="https://github.com/Marvyn21"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-light text-center mx-auto"

@@ -119,31 +119,6 @@ export class Skills extends Component {
         ],
       },
       {
-        name: "Data Science",
-        description:
-          "I am skilled in using python to extract, process, visualize, and build predictive models from data.",
-        icon: "fas fa-cogs fa-3x",
-        skills: [
-          {
-            name: "Pandas",
-            level: { width: "87%" },
-          },
-          {
-            name: "Numpy",
-            level: { width: "82%" },
-          },
-
-          {
-            name: "Matplotlib",
-            level: { width: "82%" },
-          },
-          {
-            name: "Sk-Learn",
-            level: { width: "80%" },
-          },
-        ],
-      },
-      {
         name: "UI & UX",
         description:
           "I have a experience in developing user-friendly UIs, and using common templating engines.",
