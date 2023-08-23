@@ -14,14 +14,14 @@ export class Contact extends Component {
             <div className="container-fluid">
               <div className="row">
                 <div className="text-light col-md-4 text-left mt-5">
-                  <i class="fas fa-phone fa-sm"></i>&nbsp;Mobile No: <a href="tel:+254-727-737-299">+254-727-737-299</a>
+                  <i class="fas fa-phone fa-sm"></i>&nbsp;Mobile No: <a href="tel:+254-727-737-299">+254-719-127-027</a>
                   <br></br>
                   <i class="far fa-envelope fa-sm"></i>&nbsp;Email:
-                  <a href="mailto:hesbonkiptoo5600@gmail.com">hesbonkiptoo5600@gmail.com</a>
+                  <a href="mailto:marvynrogony@gmail.com">marvynrogony@gmail.com</a>
                 </div>
                 <div className="col-md-4 text-md-center mt-5">
                   <a
-                    href="https://github.com/Hesbon5600"
+                    href="https://github.com/Marvyn21"
                     onClick={() =>
                       ReactGA.event({
                         category: "Viewing",
@@ -36,7 +36,7 @@ export class Contact extends Component {
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/in/hesbon-kiptoo-maiyo/"
+                    href="https://www.linkedin.com/in/marvyn-rogony/"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
@@ -49,7 +49,7 @@ export class Contact extends Component {
                     <i class="fab fa-linkedin fa-2x p-1"></i>
                   </a>
                   <a
-                    href="https://stackoverflow.com/users/6531903/hesbon"
+                    href="https://stackoverflow.com/users/21072496/marvyn-kiplagat"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
@@ -80,7 +80,7 @@ export class Contact extends Component {
         <br></br>
         <br></br>
         <div className="text-center text-light">
-          &copy; {(new Date().getFullYear())}. Hesbon Kiptoo Maiyo
+          &copy; {(new Date().getFullYear())}. Marvyn Kiplagat Rogony
         </div>
         <br></br>
       </section>

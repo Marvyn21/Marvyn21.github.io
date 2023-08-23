@@ -165,7 +165,7 @@ class Cv extends React.Component {
     return (
       <div className="p-4 text-dark">
         <img
-          src="https://res.cloudinary.com/dsw3onksq/image/upload/v1572774489/me_ngufrt.png"
+          src="https://res.cloudinary.com/dp5j2kwic/image/upload/v1692777423/a3vome9swyqloopzyzo6.png"
           width="150"
           height="150"
           className="rounded mx-auto d-block img-responsive"
