@@ -75,8 +75,8 @@ class Cv extends React.Component {
         ]
       },
       {
-        company: "Digital Dive Web Solutions",
-        title: "Frontend Developer",
+        company: "Ignite Binary",
+        title: "Full-stack Developer",
         location: "Nairobi, Kenya",
         from: "01/2020",
         to: "06/2021",
@@ -85,10 +85,9 @@ class Cv extends React.Component {
             from: "01/2020",
             to: "06/2021",
             descriptions: [
-              "Developed highly interactive single page applications utilizing modern web technologies such as HTML/CSS, and JavaScript (ReactJS), and adhering to web accessibility and design standards.",
-              "Improved site stability and increased user engagement by increasing unit test coverage by 30% through implementing automated testing processes. Wrote unit tests and performed code reviews, troubleshooted and debugged issues as they arose, and optimized application performance to improve user experience. These efforts resulted in increased stability and performance of the organization's digital products, leading to greater user engagement and satisfaction.",
+              "I worked at Ignite as a member of the Vitea product development team. This personal health software offers many advantages for helping healthcare organizations automate procedures, boost output, simplify workflow management, and enable patients track their own health histories.",
             ],
-            technologies: ["HTML/CSS", "JavaScript (ReactJS)", "Unit Testing", "Web Accessibility"],
+            technologies: ["HTML/CSS", "JavaScript (ReactJS)", "Flask", "Python", "Web Accessibility"],
           },
         ],
       },
