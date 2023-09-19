@@ -65,7 +65,7 @@ class Cv extends React.Component {
         projects: [
           {
             from: "August, 2021",
-            to: "March, 2023",
+            to: "August, 2023",
             descriptions: [
               "As part of a team, I created a web application for the company that reduced the time it took to complete a specific development task from 3 days to 2 days, resulting in a 30% reduction in development time. Utilizing API integration and Redux state management, I improved user satisfaction scores by 20%.",
               "Working closely with a team of developers and designers, I developed modular front-end user-interfaces and back-end services using JavaScript, Node.js, and React. Additionally, I optimized database schemas with normalized data to improve system performance. To upgrade application performance by 30%, I implemented multithreading and optimized SQL queries, resulting in faster execution through parallel processing techniques.",
